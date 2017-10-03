@@ -4,13 +4,25 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>pbdev</groupId>
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>9</version>
+	</parent>
+
+	<groupId>br.com.caelum.vraptor</groupId>
 	<artifactId>vraptor-jtwig</artifactId>
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
 	<name>vraptor-jtwig</name>
 	<url>https://github.com/pbaris/vraptor-jtwig</url>
+	<scm>
+		<url>https://github.com/pbaris/vraptor-jtwig.git</url>
+		<connection>scm:git:git://github.com/pbaris/vraptor-jtwig</connection>
+		<developerConnection>scm:git:git@github.com:pbaris/vraptor-jtwig.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -18,17 +30,20 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
-	<scm>
-		<url>https://github.com/pbaris/vraptor-jtwig.git</url>
-		<connection>scm:git:git://github.com/pbaris/vraptor-jtwig</connection>
-		<developerConnection>scm:git:git@github.com:pbaris/vraptor-jtwig.git</developerConnection>
-	</scm>
+	<licenses>
+		<license>
+			<distribution>repo</distribution>
+			<name>Apache License, Version 2.0</name>
+			<url>http://apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
 
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
 			<version>7.0</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.jtwig</groupId>

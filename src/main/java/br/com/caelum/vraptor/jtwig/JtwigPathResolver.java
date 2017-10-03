@@ -1,4 +1,4 @@
-package pbdev.vraptor.jtwig;
+package br.com.caelum.vraptor.jtwig;
 
 import br.com.caelum.vraptor.http.FormatResolver;
 import br.com.caelum.vraptor.view.DefaultPathResolver;

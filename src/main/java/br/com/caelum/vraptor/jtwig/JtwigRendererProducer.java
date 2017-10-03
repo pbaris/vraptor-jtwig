@@ -1,4 +1,4 @@
-package pbdev.vraptor.jtwig;
+package br.com.caelum.vraptor.jtwig;
 
 import org.jtwig.environment.EnvironmentConfigurationBuilder;
 import org.jtwig.web.servlet.JtwigRenderer;
