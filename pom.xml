@@ -7,6 +7,38 @@
 	<groupId>pbdev</groupId>
 	<artifactId>vraptor-jtwig</artifactId>
 	<version>1.0.0</version>
+	<packaging>jar</packaging>
 
+	<name>vraptor-jtwig</name>
+	<url>https://github.com/pbaris/vraptor-jtwig</url>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<scm>
+		<url>https://github.com/pbaris/vraptor-jtwig.git</url>
+		<connection>scm:git:git://github.com/pbaris/vraptor-jtwig</connection>
+		<developerConnection>scm:git:git@github.com:pbaris/vraptor-jtwig.git</developerConnection>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>javax</groupId>
+			<artifactId>javaee-web-api</artifactId>
+			<version>7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jtwig</groupId>
+			<artifactId>jtwig-web</artifactId>
+			<version>5.86.1.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>br.com.caelum</groupId>
+			<artifactId>vraptor</artifactId>
+			<version>4.2.0-RC5</version>
+		</dependency>
+	</dependencies>
 </project>
