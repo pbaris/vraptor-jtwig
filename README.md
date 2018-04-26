@@ -1,5 +1,5 @@
 ## vraptor-jtwig
-[Jtwig](http://jtwig.org/) render engine plugin for Vraptor 4 
+[Jtwig](http://jtwig.org/) template engine plugin for Vraptor 4 
 
 ### Use
 Just add your templates in `WEB-INF/jtwig` with extension `.jtwig`
