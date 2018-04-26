@@ -15,11 +15,19 @@ public class JtwigRendererProducer {
 
 	@Produces
 	public JtwigRenderer getRenderer() {
-		return new JtwigRenderer(EnvironmentConfigurationBuilder
+		return new JtwigRenderer(getBuilder().build());
+	}
+
+	private EnvironmentConfigurationBuilder getBuilder() {
+		return EnvironmentConfigurationBuilder
 			.configuration()
-				.render()
-					.withOutputCharset(StandardCharsets.UTF_8)
-				.and()
-			.build());
+
+			.render()
+				.withOutputCharset(StandardCharsets.UTF_8)
+			.and()
+
+			.parser()
+				.withoutTemplateCache()
+			.and();
 	}
 }

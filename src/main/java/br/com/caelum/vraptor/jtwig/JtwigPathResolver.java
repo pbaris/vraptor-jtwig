@@ -25,10 +25,10 @@ public class JtwigPathResolver extends DefaultPathResolver {
 	}
 
 	public String getPrefix() {
-		return "";
+		return "/WEB-INF/jtwig/";
 	}
 
 	public String getExtension() {
-		return "twig";
+		return "jtwig";
 	}
 }

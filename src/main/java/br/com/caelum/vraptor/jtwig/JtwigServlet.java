@@ -4,6 +4,7 @@ import org.jtwig.web.servlet.JtwigRenderer;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,6 +13,7 @@ import java.io.IOException;
 /**
  * @author Panos Bariamis (pbaris)
  */
+@WebServlet(displayName = "Jtwig Servlet", urlPatterns = "*.jtwig")
 public class JtwigServlet extends HttpServlet {
 
 	private final JtwigRenderer renderer;
@@ -36,13 +38,16 @@ public class JtwigServlet extends HttpServlet {
 	private static String getPath(HttpServletRequest request) {
 		String path = (String)request.getAttribute("javax.servlet.include.servlet_path");
 		String info = (String)request.getAttribute("javax.servlet.include.path_info");
+
 		if (path == null) {
 			path = request.getServletPath();
 			info = request.getPathInfo();
 		}
+
 		if (info != null) {
 			path += info;
 		}
+
 		return path;
 	}
 }
