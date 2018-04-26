@@ -1,5 +1,5 @@
 ## vraptor-jtwig
-![Build status](https://api.travis-ci.org/pbaris/vraptor-jtwig.png)
+[Jtwig](http://jtwig.org/) render engine plugin for Vraptor 4 
 
 ### Use
 Just add your templates in `WEB-INF/jtwig` with extension `.jtwig`
